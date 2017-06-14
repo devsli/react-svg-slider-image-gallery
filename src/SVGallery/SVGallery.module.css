@@ -1,5 +1,6 @@
 :local(.SVGallery) {
 	position: relative;
+	display: inline-block;
 }
 
 :local(.SVGallery) object {
@@ -8,6 +9,6 @@
 	height: 100%;
 }
 
-:local(.SVGallery) object:nth-child(2) {
-	z-index: -1;
+:local(.SVGallery) object:nth-child(1) {
+	z-index: 1;
 }

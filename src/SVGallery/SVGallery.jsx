@@ -91,9 +91,13 @@ export default class SVGallery extends React.Component {
 	render() {
 		let { layers } = this.state;
 		let { width, height } = this.props;
+		let classNames = styles.SVGallery;
+		if (this.props.className) {
+			classNames += ' ' + this.props.className;
+		}
 
 		return (
-			<div className={ styles.SVGallery }>
+			<div className={ classNames } style={{ width, height }}>
 				{ layers.map(l => (
 					<SVGalleryLayer
 						key={ l.key }

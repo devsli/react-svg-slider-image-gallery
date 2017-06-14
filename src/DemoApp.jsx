@@ -1,5 +1,6 @@
 import React from 'react';
 import { SVGallery } from './SVGallery';
+import * as styles from './DemoApp.module.css';
 
 export default class DemoApp extends React.Component {
 	render() {
@@ -25,7 +26,8 @@ export default class DemoApp extends React.Component {
 
 		return (
 			<div>
-				<SVGallery
+				<h1>SVGallery</h1>
+				<SVGallery className='svgallery'
 					images={ images } width="640px" height="480px" />
 			</div>
 		);
