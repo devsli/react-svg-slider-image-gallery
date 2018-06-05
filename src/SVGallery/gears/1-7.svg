@@ -106,7 +106,7 @@
 		</clipPath>
 
 		<pattern id="slide1" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
-			<image id="17-frame1" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+			<image id="17-frame-f1" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
 				<animate attributeName="width" attributeType="XML"
 								 from="100%" to="120%"
 								 begin="0s" dur="20s"
@@ -123,7 +123,7 @@
 		</pattern>
 
 		<pattern id="slide2" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
-			<image id="17-frame2" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+			<image id="17-frame-f2" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
 				<animate attributeName="width" attributeType="XML"
 								 from="100%" to="120%"
 								 begin="0s" dur="20s"
@@ -140,7 +140,7 @@
 		</pattern>
 
 		<pattern id="slide3" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
-			<image id="17-frame3" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+			<image id="17-frame-f3" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
 				<animate attributeName="width" attributeType="XML"
 								 from="100%" to="120%"
 								 begin="0s" dur="20s"
@@ -157,7 +157,7 @@
 		</pattern>
 
 		<pattern id="slide4" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
-			<image id="17-frame4" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+			<image id="17-frame-f4" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
 				<animate attributeName="width" attributeType="XML"
 								 from="100%" to="120%"
 								 begin="0s" dur="20s"
@@ -174,7 +174,7 @@
 		</pattern>
 
 		<pattern id="slide5" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
-			<image id="17-frame5" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+			<image id="17-frame-f5" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
 				<animate attributeName="width" attributeType="XML"
 								 from="100%" to="120%"
 								 begin="0s" dur="20s"
@@ -191,7 +191,7 @@
 		</pattern>
 
 		<pattern id="slide6" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
-			<image id="17-frame6" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+			<image id="17-frame-f6" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
 				<animate attributeName="width" attributeType="XML"
 								 from="100%" to="120%"
 								 begin="0s" dur="20s"
@@ -208,7 +208,7 @@
 		</pattern>
 
 		<pattern id="slide7" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
-			<image id="17-frame7" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+			<image id="17-frame-f7" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
 				<animate attributeName="width" attributeType="XML"
 								 from="100%" to="120%"
 								 begin="0s" dur="20s"
@@ -225,7 +225,7 @@
 		</pattern>
 
 		<pattern id="slide8" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
-			<image id="17-frame8" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+			<image id="17-frame-f8" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
 				<animate attributeName="width" attributeType="XML"
 								 from="100%" to="120%"
 								 begin="0s" dur="20s"
@@ -242,7 +242,7 @@
 		</pattern>
 
 		<pattern id="slide9" x="0" y="0" width="50%" height="50%" patternUnits="userSpaceOnUse">
-			<image id="17-frame9" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+			<image id="17-frame-f9" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
 				<animate attributeName="width" attributeType="XML"
 								 from="50%" to="60%"
 								 begin="0s" dur="20s"
@@ -258,7 +258,7 @@
 			</image>
 		</pattern>
 		<pattern id="slide10" x="50%" y="0" width="50%" height="50%" patternUnits="userSpaceOnUse">
-			<image id="17-frame10" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+			<image id="17-frame-f10" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
 				<animate attributeName="width" attributeType="XML"
 								 from="50%" to="60%"
 								 begin="0s" dur="20s"
@@ -274,7 +274,7 @@
 			</image>
 		</pattern>
 		<pattern id="slide11" x="0" y="50%" width="50%" height="50%" patternUnits="userSpaceOnUse">
-			<image id="17-frame11" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+			<image id="17-frame-f11" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
 				<animate attributeName="width" attributeType="XML"
 								 from="50%" to="60%"
 								 begin="0s" dur="20s"
@@ -290,7 +290,7 @@
 			</image>
 		</pattern>
 		<pattern id="slide12" x="50%" y="50%" width="50%" height="50%" patternUnits="userSpaceOnUse">
-			<image id="17-frame12" xlink:href="" x="-10%" y="0" height="50%" width="60%" preserveAspectRatio="xMidYMid slice">
+			<image id="17-frame-f12" xlink:href="" x="-10%" y="0" height="50%" width="60%" preserveAspectRatio="xMidYMid slice">
 				<animate attributeName="width" attributeType="XML"
 								 from="50%" to="60%"
 								 begin="0s" dur="20s"
@@ -352,47 +352,22 @@
 	</g>
 
 	<script type="application/ecmascript"> <![CDATA[
+	const id = '17';
 
-	// when used as an object, we'll allow attributes to be changed by params passed in the query string
-	var paramList = [];
-	var refs = [];
-	var href = document.defaultView.location.href;
-	if ( -1 != href.indexOf("?") ) {
-		var paramList = href.split("?")[1].split(/&|;/);
-		for ( var p = 0, pLen = paramList.length; pLen > p; p++ ) {
-			var eachParam = paramList[ p ];
-			var valList = eachParam.split("=");
+	var refs = {};
+	const href = document.defaultView.location.href;
+	if (href.indexOf("?") > 0) {
+		href.split("?")[1].split(/&|;/).forEach(function(param) {
+			var valList = param.split("=");
 			var name = unescape(valList[0]);
 			var value = unescape(valList[1]);
 			refs[name] = value;
-		}
+		});
 	}
-	// do stuff with the params
-	document.getElementById("17-frame1")
-	        .setAttribute("xlink:href", refs['f1']);
-	document.getElementById("17-frame2")
-	        .setAttribute("xlink:href", refs['f2']);
-	document.getElementById("17-frame3")
-	        .setAttribute("xlink:href", refs['f3']);
-	document.getElementById("17-frame4")
-	        .setAttribute("xlink:href", refs['f4']);
-	document.getElementById("17-frame5")
-	        .setAttribute("xlink:href", refs['f5']);
-	document.getElementById("17-frame6")
-	        .setAttribute("xlink:href", refs['f6']);
-	document.getElementById("17-frame7")
-	        .setAttribute("xlink:href", refs['f7']);
-	document.getElementById("17-frame8")
-	        .setAttribute("xlink:href", refs['f8']);
-	document.getElementById("17-frame9")
-	        .setAttribute("xlink:href", refs['f9']);
-	document.getElementById("17-frame10")
-	        .setAttribute("xlink:href", refs['f10']);
-	document.getElementById("17-frame11")
-	        .setAttribute("xlink:href", refs['f11']);
-	document.getElementById("17-frame12")
-	        .setAttribute("xlink:href", refs['f12']);
 
+	Object.getOwnPropertyNames(refs).forEach(function(key) {
+		document.getElementById(id + '-frame-' + key).setAttribute("xlink:href", refs[key]);
+	});
 	]]></script>
 
 </svg>

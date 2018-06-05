@@ -1,7 +1,11 @@
 h1 {
-	font-family: 'Passion One', cursive;
 	text-align: center;
 }
-.svgallery {
+
+.svgallery > .react-svg-slider-image-gallery {
+	margin: 0 auto;
+}
+
+.root {
 	text-align: center;
 }

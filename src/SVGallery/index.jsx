@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import SVGalleryLayer from './SVGalleryLayer';
 import * as styles from './SVGallery.module.css';
 
 function arrayRandom(array) {
@@ -22,18 +23,18 @@ export default class SVGallery extends React.Component {
 	lastImageIdx = 0;
 
 	transitions = [
-		{ src: require('./gears/1-1.svg'), images: 1, duration: 2 },
-		{ src: require('./gears/1-2.svg'), images: 1, duration: 7 },
-		{ src: require('./gears/1-3.svg'), images: 2, duration: 7 },
-		{ src: require('./gears/1-4.svg'), images: 8, duration: 8 },
-		{ src: require('./gears/1-5.svg'), images: 4, duration: 7 },
-		{ src: require('./gears/1-6.svg'), images: 3, duration: 7 },
-		{ src: require('./gears/1-7.svg'), images: 12, duration: 8 },
-		{ src: require('./gears/2-1.svg'), images: 2, duration: 12 },
-		{ src: require('./gears/2-2.svg'), images: 4, duration: 8 },
-		{ src: require('./gears/2-3.svg'), images: 8, duration: 5 },
-		{ src: require('./gears/3-1.svg'), images: 4, duration: 12 },
-		{ src: require('./gears/3-2.svg'), images: 7, duration: 11 },
+		{ src: require('./gears/1-1.svg'), id: '1-1', images: 1, duration: 2 },
+		{ src: require('./gears/1-2.svg'), id: '1-2', images: 1, duration: 7 },
+		{ src: require('./gears/1-3.svg'), id: '1-3', images: 2, duration: 7 },
+		{ src: require('./gears/1-4.svg'), id: '1-4', images: 8, duration: 8 },
+		{ src: require('./gears/1-5.svg'), id: '1-5', images: 4, duration: 7 },
+		{ src: require('./gears/1-6.svg'), id: '1-6', images: 3, duration: 7 },
+		{ src: require('./gears/1-7.svg'), id: '1-7', images: 12, duration: 8 },
+		{ src: require('./gears/2-1.svg'), id: '2-1', images: 2, duration: 12 },
+		{ src: require('./gears/2-2.svg'), id: '2-2', images: 4, duration: 8 },
+		{ src: require('./gears/2-3.svg'), id: '2-3', images: 8, duration: 5 },
+		{ src: require('./gears/3-1.svg'), id: '3-1', images: 4, duration: 12 },
+		{ src: require('./gears/3-2.svg'), id: '3-2', images: 7, duration: 11 },
 	];
 
 	state = {
@@ -77,7 +78,7 @@ export default class SVGallery extends React.Component {
 		});
 
 		this.sliderTimeout = setTimeout(this.nextSlide,
-		                                (animation.duration + this.props.delay) * 1000);
+			(animation.duration + this.props.delay) * 1000);
 	}
 
 	componentDidMount() {
@@ -91,35 +92,21 @@ export default class SVGallery extends React.Component {
 	render() {
 		let { layers } = this.state;
 		let { width, height } = this.props;
-		let classNames = styles.SVGallery;
+		let classNames = 'react-svg-slider-image-gallery';
 		if (this.props.className) {
 			classNames += ' ' + this.props.className;
 		}
 
 		return (
-			<div className={ classNames } style={{ width, height }}>
-				{ layers.map(l => (
+			<div className={classNames} style={{ width, height }}>
+				{layers.map(l => (
 					<SVGalleryLayer
-						key={ l.key }
-						animation={ l.animation }
-						images={ l.images }
+						key={l.key}
+						animation={l.animation}
+						images={l.images}
 						style={{ width, height }} />
-				)).reverse() }
+				)).reverse()}
 			</div>
-		);
-	}
-}
-
-class SVGalleryLayer extends React.Component {
-	render() {
-		let params = this.props.images
-				.map((url, i) => `f${1+i}=${url}`)
-				.join('&');
-
-		return (
-			<object type="image/svg+xml"
-							data={ this.props.animation.src + '?' + params }
-							style={ this.props.style } />
 		);
 	}
 }

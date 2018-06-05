@@ -51,13 +51,13 @@
 
 
 		<pattern id="slide1" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
-			<image id="21-frame1" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+			<image id="21-frame-f1" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
 				<animate attributeName="width" attributeType="XML" from="100%" to="120%" begin="0s" dur="20s" keyTimes="0;1" keySplines=".25,.1,.25,1" calcMode="spline" repeatCount="1" />
 				<animate attributeName="x" attributeType="XML" from="0" to="-10%" begin="0s" dur="20s" keyTimes="0;1" keySplines=".25,.1,.25,1" calcMode="spline" repeatCount="1" />
 			</image>
 		</pattern>
 		<pattern id="slide2" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
-			<image id="21-frame2" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+			<image id="21-frame-f2" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
 				<animate attributeName="width" attributeType="XML" from="100%" to="120%" begin="0s" dur="20s" keyTimes="0;1" keySplines=".25,.1,.25,1" calcMode="spline" repeatCount="1" />
 				<animate attributeName="x" attributeType="XML" from="0" to="-10%" begin="0s" dur="20s" keyTimes="0;1" keySplines=".25,.1,.25,1" calcMode="spline" repeatCount="1" />
 			</image>
@@ -70,27 +70,22 @@
 	<rect x="0px" y="0px" height="100%" width="100%" fill="url(#slide2)" clip-path="url(#21-clip-2)" />
 
 	<script type="application/ecmascript"> <![CDATA[
+	const id = '21';
 
-	// when used as an object, we'll allow attributes to be changed by params passed in the query string
-	var paramList = [];
-	var refs = [];
-	var href = document.defaultView.location.href;
-	if ( -1 != href.indexOf("?") ) {
-		var paramList = href.split("?")[1].split(/&|;/);
-		for ( var p = 0, pLen = paramList.length; pLen > p; p++ ) {
-			var eachParam = paramList[ p ];
-			var valList = eachParam.split("=");
+	var refs = {};
+	const href = document.defaultView.location.href;
+	if (href.indexOf("?") > 0) {
+		href.split("?")[1].split(/&|;/).forEach(function(param) {
+			var valList = param.split("=");
 			var name = unescape(valList[0]);
 			var value = unescape(valList[1]);
 			refs[name] = value;
-		}
+		});
 	}
-	// do stuff with the params
-	document.getElementById("21-frame1")
-	        .setAttribute("xlink:href", refs['f1']);
-	document.getElementById("21-frame2")
-	        .setAttribute("xlink:href", refs['f2']);
 
+	Object.getOwnPropertyNames(refs).forEach(function(key) {
+		document.getElementById(id + '-frame-' + key).setAttribute("xlink:href", refs[key]);
+	});
 	]]></script>
 
 </svg>

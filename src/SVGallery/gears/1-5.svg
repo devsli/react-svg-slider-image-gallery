@@ -27,7 +27,7 @@
 		</clipPath>
 
 		<pattern id="slide1" x="0" y="0" width="50%" height="50%" patternUnits="userSpaceOnUse">
-			<image id="15-frame1" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+			<image id="15-frame-f1" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
 				<animate attributeName="width" attributeType="XML"
 								 from="50%" to="60%"
 								 begin="0s" dur="20s"
@@ -43,7 +43,7 @@
 			</image>
 		</pattern>
 		<pattern id="slide2" x="50%" y="0" width="50%" height="50%" patternUnits="userSpaceOnUse">
-			<image id="15-frame2" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+			<image id="15-frame-f2" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
 				<animate attributeName="width" attributeType="XML"
 								 from="50%" to="60%"
 								 begin="0s" dur="20s"
@@ -59,7 +59,7 @@
 			</image>
 		</pattern>
 		<pattern id="slide3" x="0" y="50%" width="50%" height="50%" patternUnits="userSpaceOnUse">
-			<image id="15-frame3" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+			<image id="15-frame-f3" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
 				<animate attributeName="width" attributeType="XML"
 								 from="50%" to="60%"
 								 begin="0s" dur="20s"
@@ -75,7 +75,7 @@
 			</image>
 		</pattern>
 		<pattern id="slide4" x="50%" y="50%" width="50%" height="50%" patternUnits="userSpaceOnUse">
-			<image id="15-frame4" xlink:href="" x="-10%" y="0" height="50%" width="60%" preserveAspectRatio="xMidYMid slice">
+			<image id="15-frame-f4" xlink:href="" x="-10%" y="0" height="50%" width="60%" preserveAspectRatio="xMidYMid slice">
 				<animate attributeName="width" attributeType="XML"
 								 from="50%" to="60%"
 								 begin="0s" dur="20s"
@@ -101,31 +101,22 @@
 	</g>
 
 	<script type="application/ecmascript"> <![CDATA[
+	const id = '15';
 
-	// when used as an object, we'll allow attributes to be changed by params passed in the query string
-	var paramList = [];
-	var refs = [];
-	var href = document.defaultView.location.href;
-	if ( -1 != href.indexOf("?") ) {
-		var paramList = href.split("?")[1].split(/&|;/);
-		for ( var p = 0, pLen = paramList.length; pLen > p; p++ ) {
-			var eachParam = paramList[ p ];
-			var valList = eachParam.split("=");
+	var refs = {};
+	const href = document.defaultView.location.href;
+	if (href.indexOf("?") > 0) {
+		href.split("?")[1].split(/&|;/).forEach(function(param) {
+			var valList = param.split("=");
 			var name = unescape(valList[0]);
 			var value = unescape(valList[1]);
 			refs[name] = value;
-		}
+		});
 	}
-	// do stuff with the params
-	document.getElementById("15-frame1")
-	        .setAttribute("xlink:href", refs['f1']);
-	document.getElementById("15-frame2")
-	        .setAttribute("xlink:href", refs['f2']);
-	document.getElementById("15-frame3")
-	        .setAttribute("xlink:href", refs['f3']);
-	document.getElementById("15-frame4")
-	        .setAttribute("xlink:href", refs['f4']);
 
+	Object.getOwnPropertyNames(refs).forEach(function(key) {
+		document.getElementById(id + '-frame-' + key).setAttribute("xlink:href", refs[key]);
+	});
 	]]></script>
 
 </svg>

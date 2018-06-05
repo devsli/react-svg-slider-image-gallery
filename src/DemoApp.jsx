@@ -1,5 +1,5 @@
 import React from 'react';
-import { SVGallery } from './SVGallery';
+import SVGallery from './SVGallery';
 import * as styles from './DemoApp.module.css';
 
 export default class DemoApp extends React.Component {
@@ -24,11 +24,16 @@ export default class DemoApp extends React.Component {
 			'http://www.publicdomainpictures.net/pictures/30000/nahled/a-reflection-of-nature.jpg'
 		];
 
+		const width = window.screen.width / 2;
+		const height = window.screen.height / 2;
+
 		return (
-			<div>
-				<h1>SVGallery</h1>
-				<SVGallery className='svgallery'
-					images={ images } width="640px" height="480px" />
+			<div className='svgallery'>
+				<h1>SVGallery Example</h1>
+				<SVGallery
+					images={images}
+					width={`${width}px`}
+					height={`${height}px`} />
 			</div>
 		);
 	}
