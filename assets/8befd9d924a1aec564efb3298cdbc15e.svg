@@ -1,0 +1,293 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" version="1.1"
+		 xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+	<defs>
+		<pattern id="slide1" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
+			<image id="32-frame-f1" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+				<animate attributeName="width" attributeType="XML" from="100%" to="120%" begin="0s" dur="20s" keyTimes="0;1" keySplines=".25,.1,.25,1" calcMode="spline" repeatCount="1" />
+				<animate attributeName="x" attributeType="XML" from="0" to="-10%" begin="0s" dur="20s" keyTimes="0;1" keySplines=".25,.1,.25,1" calcMode="spline" repeatCount="1" />
+			</image>
+		</pattern>
+		<pattern id="slide2" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
+			<image id="32-frame-f2" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+				<animate attributeName="width" attributeType="XML" from="100%" to="120%" begin="0s" dur="20s" keyTimes="0;1" keySplines=".25,.1,.25,1" calcMode="spline" repeatCount="1" />
+				<animate attributeName="x" attributeType="XML" from="0" to="-10%" begin="0s" dur="20s" keyTimes="0;1" keySplines=".25,.1,.25,1" calcMode="spline" repeatCount="1" />
+			</image>
+		</pattern>
+		<pattern id="slide3" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
+			<image id="32-frame-f3" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+				<animate attributeName="width" attributeType="XML" from="100%" to="120%" begin="0s" dur="20s" keyTimes="0;1" keySplines=".25,.1,.25,1" calcMode="spline" repeatCount="1" />
+				<animate attributeName="x" attributeType="XML" from="0" to="-10%" begin="0s" dur="20s" keyTimes="0;1" keySplines=".25,.1,.25,1" calcMode="spline" repeatCount="1" />
+			</image>
+		</pattern>
+		<pattern id="slide4" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
+			<image id="32-frame-f4" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+				<animate attributeName="width" attributeType="XML" from="100%" to="120%" begin="0s" dur="20s" keyTimes="0;1" keySplines=".25,.1,.25,1" calcMode="spline" repeatCount="1" />
+				<animate attributeName="x" attributeType="XML" from="0" to="-10%" begin="0s" dur="20s" keyTimes="0;1" keySplines=".25,.1,.25,1" calcMode="spline" repeatCount="1" />
+			</image>
+		</pattern>
+		<pattern id="slide5" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
+			<image id="32-frame-f5" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+				<animate attributeName="width" attributeType="XML" from="100%" to="120%" begin="0s" dur="20s" keyTimes="0;1" keySplines=".25,.1,.25,1" calcMode="spline" repeatCount="1" />
+				<animate attributeName="x" attributeType="XML" from="0" to="-10%" begin="0s" dur="20s" keyTimes="0;1" keySplines=".25,.1,.25,1" calcMode="spline" repeatCount="1" />
+			</image>
+		</pattern>
+		<pattern id="slide6" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
+			<image id="32-frame-f6" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+				<animate attributeName="width" attributeType="XML" from="100%" to="120%" begin="0s" dur="20s" keyTimes="0;1" keySplines=".25,.1,.25,1" calcMode="spline" repeatCount="1" />
+				<animate attributeName="x" attributeType="XML" from="0" to="-10%" begin="0s" dur="20s" keyTimes="0;1" keySplines=".25,.1,.25,1" calcMode="spline" repeatCount="1" />
+			</image>
+		</pattern>
+		<pattern id="slide7" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
+			<image id="32-frame-f7" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+				<animate attributeName="width" attributeType="XML" from="100%" to="120%" begin="0s" dur="20s" keyTimes="0;1" keySplines=".25,.1,.25,1" calcMode="spline" repeatCount="1" />
+				<animate attributeName="x" attributeType="XML" from="0" to="-10%" begin="0s" dur="20s" keyTimes="0;1" keySplines=".25,.1,.25,1" calcMode="spline" repeatCount="1" />
+			</image>
+		</pattern>
+
+		<clipPath id="32-clip-1" clipPathUnits="objectBoundingBox">
+      <rect x="0" y="0" width="0" height="0">
+				<animate attributeName="width" attributeType="XML"
+					from="0" to=".333"
+					begin="0s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+				<animate attributeName="height" attributeType="XML"
+					from="0" to=".333"
+					begin="0s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+				<animate attributeName="width" attributeType="XML"
+					from=".333" to="0"
+					begin="3s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+			</rect>
+	</clipPath>
+	<clipPath id="32-clip-2" clipPathUnits="objectBoundingBox">
+		<rect x="0" y="0" width="0" height="1">
+			<animate attributeName="width" attributeType="XML"
+				from="0" to=".333"
+				begin="0s" dur="2s"
+				keyTimes="0;1" keySplines=".25,.1,.25,1"
+				calcMode="spline"
+				repeatCount="1"
+				fill="freeze" />
+			<animate attributeName="y" attributeType="XML"
+				from="0" to=".333"
+				begin="0s" dur="2s"
+				keyTimes="0;1" keySplines=".25,.1,.25,1"
+				calcMode="spline"
+				repeatCount="1"
+				fill="freeze" />
+			<animate attributeName="width" attributeType="XML"
+				from=".333" to="0"
+				begin="3s" dur="2s"
+				keyTimes="0;1" keySplines=".25,.1,.25,1"
+				calcMode="spline"
+				repeatCount="1"
+				fill="freeze" />
+		</rect>
+	</clipPath>
+		<clipPath id="32-clip-3" clipPathUnits="objectBoundingBox">
+			<rect x="0" y="0" width="1" height="0">
+				<animate attributeName="height" attributeType="XML"
+					from="0" to=".333"
+					begin="0s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+				<animate attributeName="x" attributeType="XML"
+					from="0" to=".333"
+					begin="0s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+			</rect>
+		</clipPath>
+ 		<clipPath id="32-clip-4" clipPathUnits="objectBoundingBox">
+			<rect x=".333" y="0" width="0" height=".333">
+				<animate attributeName="x" attributeType="XML"
+					to="0"
+					begin="3s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+				<animate attributeName="width" attributeType="XML"
+					to=".667"
+					begin="3s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+				<animate attributeName="width" attributeType="XML"
+					to=".333"
+					begin="6s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+				<animate attributeName="height" attributeType="XML"
+					to=".667"
+					begin="6s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+				<animate attributeName="width" attributeType="XML"
+					to="0"
+					begin="9s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+				<animate attributeName="height" attributeType="XML"
+					to="1"
+					begin="9s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+			</rect>
+		</clipPath>
+ 		<clipPath id="32-clip-5" clipPathUnits="objectBoundingBox">
+			<rect x=".333" y=".333" width="0" height=".667">
+				<animate attributeName="x" attributeType="XML"
+					to="0"
+					begin="3s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+				<animate attributeName="width" attributeType="XML"
+					to=".667"
+					begin="3s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+				<animate attributeName="y" attributeType="XML"
+					to=".667"
+					begin="6s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+			</rect>
+		</clipPath>
+		<clipPath id="32-clip-6" clipPathUnits="objectBoundingBox">
+			<rect x="1" y="0" width="1" height=".333">
+				<animate attributeName="x" attributeType="XML"
+					to=".667"
+					begin="3s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+				<animate attributeName="x" attributeType="XML"
+					to=".333"
+					begin="6s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+				<animate attributeName="height" attributeType="XML"
+					to=".667"
+					begin="6s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+				<animate attributeName="x" attributeType="XML"
+					to="0"
+					begin="9s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+				<animate attributeName="height" attributeType="XML"
+					to="1"
+					begin="9s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+			</rect>
+		</clipPath>
+ 		<clipPath id="32-clip-7" clipPathUnits="objectBoundingBox">
+			<rect x="1" y=".333" width="1" height="1">
+				<animate attributeName="x" attributeType="XML"
+					to=".667"
+					begin="3s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+				<animate attributeName="x" attributeType="XML"
+					to=".333"
+					begin="6s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+				<animate attributeName="width" attributeType="XML"
+					to="1"
+					begin="9s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+				<animate attributeName="x" attributeType="XML"
+					to="0"
+					begin="9s" dur="2s"
+					keyTimes="0;1" keySplines=".25,.1,.25,1"
+					calcMode="spline"
+					repeatCount="1"
+					fill="freeze" />
+			</rect>
+		</clipPath>
+	</defs>
+
+	<rect x="0" y="0" height="100%" width="100%" fill="url(#slide1)" clip-path="url(#32-clip-1)">
+		<discard begin="5s" />
+	</rect>
+	<rect x="0" y="0" height="100%" width="100%" fill="url(#slide2)" clip-path="url(#32-clip-2)">
+		<discard begin="5s" />
+	</rect>
+	<rect x="0" y="0" height="100%" width="100%" fill="url(#slide3)" clip-path="url(#32-clip-3)">
+		<discard begin="5s" />
+	</rect>
+	<rect x="0" y="0" height="100%" width="100%" fill="url(#slide5)" clip-path="url(#32-clip-5)" />
+	<rect x="0" y="0" height="100%" width="100%" fill="url(#slide4)" clip-path="url(#32-clip-4)" />
+	<rect x="0" y="0" height="100%" width="100%" fill="url(#slide7)" clip-path="url(#32-clip-7)" />
+	<rect x="0" y="0" height="100%" width="100%" fill="url(#slide6)" clip-path="url(#32-clip-6)" />
+
+	<script type="application/ecmascript"> <![CDATA[
+	const id = '32';
+
+	var refs = {};
+	const href = document.defaultView.location.href;
+	if (href.indexOf("?") > 0) {
+		href.split("?")[1].split(/&|;/).forEach(function(param) {
+			var valList = param.split("=");
+			var name = unescape(valList[0]);
+			var value = unescape(valList[1]);
+			refs[name] = value;
+		});
+	}
+
+	Object.getOwnPropertyNames(refs).forEach(function(key) {
+		document.getElementById(id + '-frame-' + key).setAttribute("xlink:href", refs[key]);
+	});
+	]]></script>
+</svg>

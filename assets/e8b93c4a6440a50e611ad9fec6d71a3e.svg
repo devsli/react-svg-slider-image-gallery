@@ -1,0 +1,122 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="1-2" width="100%" height="100%" version="1.1"
+		 xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+	<defs>
+		<clipPath id="twelve" clipPathUnits="objectBoundingBox">
+			<rect x="-1" y="-2" width="1" height="4">
+					<animate id="anim1" attributeName="width" attributeType="XML"
+									 from="-1" to="1.5"
+									 begin="0s" dur="2s"
+									 keyTimes="0;1" keySplines=".25,.1,.25,1"
+									 calcMode="spline"
+									 repeatCount="1" fill="freeze" />
+
+					<animateTransform id="anim2" attributeName="transform" type="rotate"
+														from="0 .5 .5" to="-90 .5 .5"
+														begin="anim1.end+1s" dur="1s" fill="freeze"
+														repeatCount="1" />
+
+					<animate id="anim3" attributeName="width" attributeType="XML"
+									 from="1.5" to="2.5"
+									 begin="anim2.end+1s" dur="2s"
+									 keyTimes="0;1" keySplines=".25,.1,.25,1"
+									 calcMode="spline"
+									 repeatCount="1"  fill="freeze" />
+			</rect>
+		</clipPath>
+
+		<pattern id="slide1" x="0" y="0" width="50%" height="50%" patternUnits="userSpaceOnUse">
+			<image id="15-frame-f1" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+				<animate attributeName="width" attributeType="XML"
+								 from="50%" to="60%"
+								 begin="0s" dur="20s"
+								 keyTimes="0;1" keySplines=".25,.1,.25,1"
+								 calcMode="spline"
+								 repeatCount="1" />
+				<animate attributeName="x" attributeType="XML"
+								 from="0" to="-5%"
+								 begin="0s" dur="20s"
+								 keyTimes="0;1" keySplines=".25,.1,.25,1"
+								 calcMode="spline"
+								 repeatCount="1" />
+			</image>
+		</pattern>
+		<pattern id="slide2" x="50%" y="0" width="50%" height="50%" patternUnits="userSpaceOnUse">
+			<image id="15-frame-f2" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+				<animate attributeName="width" attributeType="XML"
+								 from="50%" to="60%"
+								 begin="0s" dur="20s"
+								 keyTimes="0;1" keySplines=".25,.1,.25,1"
+								 calcMode="spline"
+								 repeatCount="1" />
+				<animate attributeName="x" attributeType="XML"
+								 from="0" to="-5%"
+								 begin="0s" dur="20s"
+								 keyTimes="0;1" keySplines=".25,.1,.25,1"
+								 calcMode="spline"
+								 repeatCount="1" />
+			</image>
+		</pattern>
+		<pattern id="slide3" x="0" y="50%" width="50%" height="50%" patternUnits="userSpaceOnUse">
+			<image id="15-frame-f3" xlink:href="" x="-10%" y="0" height="100%" width="120%" preserveAspectRatio="xMidYMid slice">
+				<animate attributeName="width" attributeType="XML"
+								 from="50%" to="60%"
+								 begin="0s" dur="20s"
+								 keyTimes="0;1" keySplines=".25,.1,.25,1"
+								 calcMode="spline"
+								 repeatCount="1" />
+				<animate attributeName="x" attributeType="XML"
+								 from="0" to="-5%"
+								 begin="0s" dur="20s"
+								 keyTimes="0;1" keySplines=".25,.1,.25,1"
+								 calcMode="spline"
+								 repeatCount="1" />
+			</image>
+		</pattern>
+		<pattern id="slide4" x="50%" y="50%" width="50%" height="50%" patternUnits="userSpaceOnUse">
+			<image id="15-frame-f4" xlink:href="" x="-10%" y="0" height="50%" width="60%" preserveAspectRatio="xMidYMid slice">
+				<animate attributeName="width" attributeType="XML"
+								 from="50%" to="60%"
+								 begin="0s" dur="20s"
+								 keyTimes="0;1" keySplines=".25,.1,.25,1"
+								 calcMode="spline"
+								 repeatCount="1" />
+				<animate attributeName="x" attributeType="XML"
+								 from="0" to="-5%"
+								 begin="0s" dur="20s"
+								 keyTimes="0;1" keySplines=".25,.1,.25,1"
+								 calcMode="spline"
+								 repeatCount="1" />
+			</image>
+		</pattern>
+
+	</defs>
+
+	<g clip-path="url(#twelve)">
+		<rect x="0"   y="0"   height="50%" width="50%" fill="url(#slide1)" />
+		<rect x="50%" y="0"   height="50%" width="50%" fill="url(#slide2)" />
+		<rect x="0"   y="50%" height="50%" width="50%" fill="url(#slide3)" />
+		<rect x="50%" y="50%" height="50%" width="50%" fill="url(#slide4)" />
+	</g>
+
+	<script type="application/ecmascript"> <![CDATA[
+	const id = '15';
+
+	var refs = {};
+	const href = document.defaultView.location.href;
+	if (href.indexOf("?") > 0) {
+		href.split("?")[1].split(/&|;/).forEach(function(param) {
+			var valList = param.split("=");
+			var name = unescape(valList[0]);
+			var value = unescape(valList[1]);
+			refs[name] = value;
+		});
+	}
+
+	Object.getOwnPropertyNames(refs).forEach(function(key) {
+		document.getElementById(id + '-frame-' + key).setAttribute("xlink:href", refs[key]);
+	});
+	]]></script>
+
+</svg>
