@@ -1,10 +1,11 @@
 const webpack = require('webpack');
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
-	entry: './src/SVGallery/index.js',
+	entry: './src/index',
 	output: {
-		path: path.join(__dirname, 'dist'),
+		path: path.join(__dirname, 'docs'),
 		publicPath: './',
 		filename: '[name].[hash].js',
 		chunkFilename: '[name].[chunkhash].js'
@@ -48,7 +49,8 @@ const config = {
 			name: 'vendor',
 			minChunks: Infinity
 		}),
-		new webpack.optimize.UglifyJsPlugin()
+		new webpack.optimize.UglifyJsPlugin(),
+		new HtmlWebpackPlugin({template: './src/index.html'})
 	]
 };
 
